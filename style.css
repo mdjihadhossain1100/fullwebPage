@@ -1,0 +1,1190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  padding: 30px 60px;
+}
+header{
+  width: 100%;
+  background: #fff;
+}
+section{
+  background: #E7EAED;
+}
+button{
+  outline: none;
+}
+.fheaderSection{
+  background: #f5f5f5;
+}
+.container00{
+  padding: 0px 60px;
+}
+.topbarWapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0px;
+}
+.phoneNo i{
+  font-size: 11px;
+  color: #fb5200;
+}
+.phoneNo {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0px 7px;
+    border-left: 1px solid #ddd;
+    font-weight: 500;
+}
+.E-mailA i{
+  font-size: 12px;
+  color: #fb5200;
+}
+.E-mailA {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0px 7px;
+    border-left: 1px solid #ddd;
+    font-weight: 500;
+}
+.SocialMicons {
+    display: inline-block;
+}
+.SocialMicons i{
+  font-size: 14px;
+  border-left: 1px solid #ddd;
+  padding: 0px 6px;
+  transition: .3s;
+}
+.SocialMicons i:last-child{
+  border-right: 1px solid #ddd;
+  color: #0e76e8;
+  cursor: pointer;
+}
+.SocialMicons i:first-child{
+  color: #3b5998;
+  cursor: pointer;
+}
+.SocialMicons i:nth-child(2){
+  color: #C8277E;
+  cursor: pointer;
+}
+.SocialMicons i:hover{
+  color: #fb5200;
+}
+
+.menuBar{
+  overflow: hidden;
+  height: 50px;
+  background: #c8c9cad9;
+}
+
+.mainMWapper{
+  display: flex;
+  justify-content: space-between;
+}
+.mainMenuItems ul{
+  display: flex;
+  list-style:none;
+}
+.mainMenuItems ul li{
+
+}
+.mainMenuItems ul li a{
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px 15px;
+  line-height: 50px;
+  transition: .5s;
+  margin-right: 3px;
+}
+.mainMenuItems ul li a:hover,
+.mainMenuItems ul li a.active{
+  color: #fb5200;
+  background: #E9EBEC;
+}
+ul.subMenu2{
+  display: block;
+  padding:0px 10px;
+  border-top: 1px solid #888;
+  background: #E7EAED;
+  width: 190px;
+  visibility: hidden;
+  transition: .3s;
+  transform: scaleY(0);
+  transform-origin: top;
+  position: absolute;
+}
+ul.subMenu2 li{
+  height: 35px;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+ul.subMenu2 li:last-child{
+  border-bottom: none;
+}
+ul.subMenu2 li a{
+  line-height: 35px;
+  font-size: 11px;
+  width: 100%;
+  padding: 0px 5px;
+}
+ul.subMenu2 li a:before{
+  content: "";
+  background: #fb5200;
+  display: inline-block;
+  height: 1px;
+  width: 0px;
+  left: 0;
+  bottom: 0;
+  vertical-align: middle;
+  transition: all .5s cubic-bezier(0.48, 0.03, 0.43, 1.26);
+  margin-right: 5px;
+}
+ul.subMenu2 li:hover a:before{
+  width: 15px;
+}
+ul.subMenu2 li a:hover{
+  color: #fb5200;
+  background: none;
+}
+.mainMenuItems ul li:hover ul.subMenu2{
+  visibility: visible;
+  transform: scaleY(1);
+}
+ul.submenu3{
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 0;
+  background: #E7EAED;
+  width: 190px;
+  border-left: 1px solid #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all .5s ease;
+}
+ul.submenu3 li a:before{
+  content: "";
+  background: #fb5200;
+  display: inline-block;
+  height: 1px;
+  width: 0px !important;
+  left: 0;
+  bottom: 0;
+  vertical-align: middle;
+  transition: all .5s cubic-bezier(0.48, 0.03, 0.43, 1.26);
+  margin-right: 5px;
+}
+ul.submenu3 li:hover a:before{
+  width: 15px !important;
+}
+ul.subMenu2 li:hover ul.submenu3{
+  visibility: visible;
+  transform: scaleX(1);
+}
+#slider{
+  background: url(img/1.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.cBackground{
+  background: linear-gradient(to top, #00000063 , #00000094);
+}
+.sliderCwapper{
+  padding: 60px 0px;
+  margin-top: 50px;
+}
+.sliderCwapper h1{
+  width:400px;
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.sliderCwapper p{
+  width: 350px;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.sliderCwapper button{
+  border:none;
+  background: #fb5200;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+  margin-bottom: 50px;
+}
+.sliderCwapper button:hover{
+  transform: scale(1.1);
+  background: rgb(199 69 6);
+}
+.slidernav{
+  margin: 0 auto;
+  width: 100px;
+  margin-bottom: -40px;
+}
+.sliderCwapper span{
+    width: 10px;
+    height: 10px;
+    border: 4px solid #ddd;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    background: #04040400;
+    float: left;
+    margin-left: 8px;
+    margin-bottom: 0px;
+}
+.slidernav span:first-child{
+  background: #fb5200;
+}
+
+
+.singleBox{
+  width: 22%;
+  float: left;
+  margin-right: 20px;
+  background: gray;
+  padding: 0px 10px;
+  text-align: center;
+  box-shadow: 3px 1px 10px 0px rgb(0 0 0 / 70%);
+  border-radius: 3px;
+}
+.singleBox:last-child {
+    margin-right: 0px;
+}
+.singleBox h1 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+.singleBox h1 span{
+  display: block;
+  width: 100%;
+}
+
+.SBoxWapper {
+    overflow: hidden;
+}
+
+.singleBox i {
+    color: #fff;
+    font-size: 40px;
+    margin: 12px 0px;
+}
+
+.singleBox p {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.singleBox button {
+    padding: 0px 15px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    background: #fb5200;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.singleBox button i {
+    font-size: 11px;'
+    color: #fffff;
+}
+.singleBox button:hover{
+  transform: scale(1.1);
+  background: rgb(199 69 6);
+}
+
+
+.timage{
+  width: 50%;
+}
+.timage img{
+  width: 100%;
+}
+.teamDetails{
+  width: 50%;
+  padding-left: 50px;
+}
+.teamSecWapper {
+    display: flex;
+    justify-content: space-between;
+    height: 285px;
+    overflow: hidden;
+}
+
+.teamDetails h1 {
+    font-size: 25px;
+    margin: 15px 0px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.teamDetails p {
+    font-size: 13px;
+    font-weight: 500;
+    width: 300px;
+    margin-bottom: 12px;
+}
+
+.teamDetails ul {
+    column-count: 2;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.teamDetails ul li a {
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.teamDetails ul li a i{
+  font-size: 15px;
+  margin-right: 5px;
+}
+.tbtn {
+    width: 70%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.tbtn button {
+    padding: 7px 15px;
+    border: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    background: #fb5200;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: .3s;
+}
+.tbtn button:hover{
+  transform: scale(1.1);
+  background: rgb(199 69 6);
+}
+.teamDetails ul li a:hover{
+  color: #fb5200;
+}
+
+
+.ourCustWapper{
+  display: flex;
+  justify-content: space-around;
+}
+.singleCust{
+  background: #cbd1d8;
+  padding: 15px 10px;
+  text-align: center;
+  width: 21%;
+  box-shadow: 3px 1px 10px 0px rgb(0 0 0 / 70%);
+}
+.HcustomerI{
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #fb5200;
+}
+.singleCust h1{
+  font-size: 35px;
+  color: #333;
+  margin-bottom: 13px;
+}
+.singleCust p{
+  color: #333;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+.singleCust p:first-child{
+  font-size: 30px;
+  font-style: italic;
+}
+.singleCust p:last-child{
+  margin-bottom: 15px;
+}
+.teamTitles{
+  text-align: center;
+  width: 100%;
+}
+.teamTitles h1{
+  text-transform: capitalize;
+  color: #333;
+  position: relative;
+  padding-bottom: 8px;
+}
+.teamTitles h1::after{
+  content: "";
+  height: 3px;
+  width: 60px;
+  background: #fb5200;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+
+}
+.teamTitles p{
+  margin: 0px 250px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.singleContwapper{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  overflow: hidden;
+}
+.singleCont {
+    width: 22%;
+    padding: 10px;
+}
+
+.singleCont img {
+    width: 100%;
+    transition: .3s;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+.singleCont h3{
+  text-transform: capitalize;
+  margin: 5px 0px;
+  color: #333;
+  transition: .3s;
+  cursor: pointer;
+}
+.singleCont p{
+  font-size: 13px;
+  font-weight: 500;
+
+}
+.singleCont:hover img{
+  transform: scale(1.1);
+}
+.singleCont h3:hover{
+  color: #fb5200;
+}
+
+.ourPackes{
+  display: flex;
+  justify-content: space-around;
+}
+.singlePacklist{
+  background: #fff;
+  width: 27%;
+  padding: 20px 25px;
+  border-radius: 3px;
+  box-shadow: 3px 1px 10px 0px rgb(0 0 0 / 70%);
+}
+.singlePacklist h3{
+  color: #333;
+  font-size: 19px;
+  margin-left: 5px;
+}
+.singlePacklist h1{
+  font-size: 25px;
+  color: #111;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.singlePacklist h1 span{
+  font-size: 18px;
+  color: #444;
+
+}
+.singlePacklist ul{
+  list-style: none;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.singlePacklist ul li{
+  font-size: 14px;
+  font-weight: 600;
+}
+.singlePacklist ul li .fa-times{
+  margin-right: 10px;
+  color: #fb5200;
+}
+.singlePacklist ul li .fa-check{
+  color: green;
+  margin-right: 10px;
+}
+.singlePacklist button{
+  border:none;
+  padding: 8px 15px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+  background: #fb5200;
+  transition: .3s;
+  color: #fff;
+}
+.singlePacklist button:hover{
+  transform: scale(1.1);
+  background: rgb(199 69 6);
+}
+
+.ideaconWapper{
+  display: flex;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.idimgsec{
+  width: 50%;
+}
+.idimgsec img{
+  width: 100%;
+  height: 100%;
+}
+.ourlatestIdea{
+  width: 50%;
+  height: 100%;
+  padding-left: 15px;
+  background: #000;
+  color: #fff;
+  padding-top: 25px;
+}
+.idatitle {
+    margin-bottom: 15px;
+    width: 450px;
+}
+.idatitle h1{
+  margin-bottom: 7px;
+}
+.singleWapper{
+  column-count: 2;
+}
+.singleidea{
+  margin-bottom: 10px;
+  float: left;
+}
+.ideaIcons {
+    display: inline-block;
+    font-size: 25px;
+    float: left;
+    margin-right: 10px;
+    color: #fb5200;
+    height: 60px;
+    line-height: 55px;
+}
+.singleidea h2{
+  text-transform: capitalize;
+  font-size: 20px;
+  margin-bottom: 5px;
+  transition: .3s;
+  cursor: pointer;
+}
+.singleidea p{
+  font-size: 14px;
+  font-weight: 400;
+}
+.singleidea h2:hover{
+  color: #fb5200;
+}
+
+.teamWapper{
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.singleMem{
+  width: 23%;
+  float: left;
+  overflow: hidden;
+}
+.ProfilePic img{
+  width: 100%;
+  margin-bottom: 20px;
+  transition:.3s;
+}
+.socialMIcon{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.singleMem h3{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+.singleMem span{
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.ProfilePic{
+  position: relative;
+}
+.socialMIcon{
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.socialMIcon a{
+  text-decoration: none;
+  margin: 0 3px;
+  font-size: 20px;
+}
+.socialMIcon a i{
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  line-height: 30px;
+}
+.socialMIcon a i:hover{
+  filter: brightness(80%);
+}
+.socialMIcon .fa-facebook-f{
+  color: #fff;
+  background: #3b5998;
+  transition:all 1s ease-in-out;
+  opacity: 0;
+}
+.socialMIcon .fa-twitter{
+  color: #fff;
+  background: #00acee;
+  transition:all .75s ease-in-out;
+  opacity: 0;
+}
+.socialMIcon .fa-instagram{
+  color: #fff;
+  background: #C32AA3;
+  transition: .5s;
+  opacity: 0;
+}
+.socialMIcon .fa-linkedin-in{
+  color: #fff;
+  background: #0e76a8;
+  transition:all .25s ease-in-out;
+  opacity: 0;
+}
+.singleMem:hover .socialMIcon .fa-facebook-f{
+  opacity: 1;
+  transform: translateY(50px);
+}
+.singleMem:hover .socialMIcon .fa-twitter{
+  opacity: 1;
+  transform: translateY(50px);
+}
+.singleMem:hover .socialMIcon .fa-instagram{
+  opacity: 1;
+  transform: translateY(50px);
+}
+.singleMem:hover .socialMIcon .fa-linkedin-in{
+  opacity: 1;
+  transform: translateY(50px);
+}
+.teamSubbtn{
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+}
+.teamSubbtn button{
+  border: none;
+  padding: 7px 15px;
+  color: #fff;
+  background: #fb5200;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+  outline: none;
+}
+.teamSubbtn button:hover{
+  background: #C74506;
+  letter-spacing: .4px;
+}
+
+.SingproWapper{
+  column-count: 3;
+  overflow: hidden;
+  width: 100%;
+}
+.singleProject{
+  width: 96%;
+  height: 220px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+.singleProject:hover .projectDetails{
+  bottom: 0;
+}
+.singleProject img{
+  width: 100%;
+  height: 100%;
+}
+.projectDetails{
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  left: 0;
+  color: #fff;
+  padding: 8px 15px;
+  background: linear-gradient(#0000005c, #0000009e);
+  transition: all .3s ease-in-out;
+}
+.projectDetails span{
+  font-style: italic;
+  font-size: 12px;
+}
+.projectDetails h2{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.projectDetails button{
+  border: none;
+  padding: 4px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background: #fb5200;
+  color: #fff;
+  cursor: pointer;
+  transform: translateX(-135px);
+  outline: none;
+  transition-delay: 1s;
+  transition: all .4s ease-in-out;
+}
+.projectDetails button:hover{
+  background: #C74506;
+}
+.singleProject:hover button{
+  transform: translateX(0);
+}
+.projectDetails button i{
+  font-size: 12px;
+}
+
+.singleNewsWap{
+  column-count: 4;
+}
+.singleNews {
+    width: 97%;
+}
+.singleNews img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 8px;
+}
+h2.newsTitle {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+span.newsdesc {
+    font-size: 13px;
+    font-weight: 500;
+}
+.newscoment p {
+  display: inline-block;
+  width: 45%;
+  font-size: 12px;
+}
+
+.newscoment p:last-child {
+  text-align: end;
+  padding-right: 10px;
+}
+
+.newscoment:before {
+  content: "";
+  left: 42%;
+  bottom: 7px;
+  width: 35px;
+  height: 1px;
+  background: #fb5200;
+  position: absolute;
+}
+
+.newscoment {
+    position: relative;
+}
+span.newsdesc a {
+    text-decoration: none;
+    color: #fb5200;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+.fBoxWapper{
+  display: flex;
+  justify-content: space-between;
+}
+.SingleFbox{
+  width: 22%;
+  color: #777;
+}
+.copyRgihttxt {
+    font-size: 12px;
+    color: #777;
+    display: inline-block;
+}
+.SingleFbox h1 {
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.SingleFbox p {
+    color: #777;
+    font-size: 14px;
+}
+
+.sMideaicons {
+    margin-top: 15px;
+    display: flex;
+}
+.sMideaicons a {
+    text-decoration: none;
+    color: #777;
+    padding: 3px;
+    margin: 0 7px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    transition: .3s;
+}
+.sMideaicons a:first-child:hover{
+  background: #3b5998;
+  color: #fff;
+  border-color: #3b5998;
+}
+.sMideaicons a:nth-child(2):hover{
+  background: #1E9BEB;
+  color: #fff;
+  border-color: #1e9beb;
+}
+.sMideaicons a:nth-child(3):hover{
+  background: #BD299E;
+  color: #fff;
+  border-color: #bd299e;
+}
+.sMideaicons a:nth-child(4):hover{
+  background: #0e76a8 ;
+  color: #fff;
+  border-color: #0e76a8;
+}
+section#subcriptionBox {
+    margin-bottom: -90px;
+    position: relative;
+    width: 100%;
+    background: none;
+}
+
+footer#footerSec {
+    background: #1a1a1a;
+    padding-top: 65px
+}
+
+.SingleFbox i {
+    /*width: 20px;*/
+}
+.address-line i {
+    width: 10%;
+    display: block;
+    line-height: 35px;
+}
+
+.address-line span {
+    width: 90%;
+    display: block;
+}
+
+.address-line {display: flex;}
+
+.phone-book {
+    display: flex;
+    margin-top: 6px;
+}
+
+.phone-book i {
+    width: 10%;
+    line-height: 35px;
+}
+
+.phone-book span {
+    width: 90%;
+}
+.email-add {
+    display: flex;
+    margin-top: 6px;
+}
+
+.email-add i {
+    width: 10%;
+}
+
+.email-add span {
+    width: 90%;
+    text-decoration: underline;
+}
+.email-add span a{
+  text-decoration: none;
+  color: #777;
+}
+
+.usefullinks{
+  list-style: none;
+}
+.usefullinks li{
+  padding: 5px 0;
+  border-bottom: 1px solid #555;
+}
+.usefullinks li:last-child{
+  border:none;
+}
+.usefullinks li a{
+  text-decoration: none;
+  color: #777;
+  transition: .3s;
+}
+.usefullinks li a:hover{
+  color: #fb5200;
+}
+.usefullinks li a i{
+  padding-left: 5px;
+  font-size: 13px;
+}
+
+.postDate span {
+    display: block;
+    line-height: 18px;
+}
+
+.postDate {
+    width: 24%;
+    text-align: center;
+    background: #555;
+    border-radius: 3px;
+    padding: 3px 4px;
+}
+
+.postDate span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: #999;
+}
+
+.postDate span:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+    color: #999;
+}
+
+.postDate span:nth-child(3) {
+    font-size: 15px;
+    font-weight: 600;
+    color: #999;
+}
+.postDate span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: #999;
+}
+
+.postDate span:nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+    color: #999;
+}
+
+.postDate span:nth-child(3) {
+    font-size: 15px;
+    font-weight: 600;
+    color: #999;
+}
+.Fpostdec {
+    width: 70%;
+}
+
+.fotsingPost {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+.Fpostdec h3 {
+    font-size: 17px;
+    line-height: 17px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    transition: .3s;
+}
+.Fpostdec h3:hover{
+  color: #fb5200;
+}
+.Fpostdec span {
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    width: 50%;
+    cursor: pointer;
+}
+.fpostcom {
+    display: flex;
+}
+
+.copyRightSec {
+    border-top: 1px solid #555;
+    padding-bottom: 8px;
+}
+
+.copyRightmenu ul {
+    list-style: none;
+    font-size: 13px;
+}
+
+.copyRightmenu {
+    display: inline-block;
+}
+
+.copyRightmenu ul li a {
+    text-decoration: none;
+    color: #777;
+    padding: 0 10px;
+}
+
+.copyRightmenu ul li {
+    float: left;
+}
+.copyRigWapper{
+  justify-content: space-between;
+  display: flex;
+  padding: 7px 60px;
+}
+
+.subContainer{
+  background: #fb5200;
+  padding: 20px 30px;
+  border-radius: 3px;
+}
+.subcribeBoxwapper {
+    display: flex;
+    justify-content: space-between;
+}
+.singleSubBox{
+  width: 32%;
+}
+.singleSubBox h1{
+  color: #f2f2f2;
+  margin-bottom: 13px;
+}
+.singleSubBox:first-child h1{
+  padding-left: 20px;
+}
+.inputBox{
+  position: relative;
+}
+.singleSubBox input{
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  padding-left: 10px;
+}
+.singleSubBox button{
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 30%;
+  height: 40px;
+  border:none;
+  color: #fff;
+  background: #222;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+.subphoneNo span{
+  display: block;
+  color: #f2f2f2;
+  font-size: 15px;
+  font-weight: 500;
+}
+.subcribeicons {
+  display: flex;
+}
+
+.subcribeicons a {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #ddd;
+    transition: .3s;
+}
+.subcribeicons a:first-child:hover{
+  background: #3b5998;
+  color: #fff;
+  border-color: #3b5998;
+}
+.subcribeicons a:nth-child(2):hover{
+  background: #1E9BEB;
+  color: #fff;
+  border-color: #1e9beb;
+}
+.subcribeicons a:nth-child(3):hover{
+  background: #BD299E;
+  color: #fff;
+  border-color: #bd299e;
+}
+.subcribeicons a:nth-child(4):hover{
+  background: #0e76a8 ;
+  color: #fff;
+  border-color: #0e76a8;
+}
